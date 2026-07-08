@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Xianhe Labs | AI-Powered Chinese Localization Studio</title>
+
+<meta name="description" content="Xianhe Labs provides AI-powered Chinese localization, translation, content creation, voice-over and cultural adaptation services for global businesses.">
+
+<meta name="keywords" content="Chinese localization, AI services, Chinese translation, Mandarin voice over, Chinese social media, brand naming">
+
+<style>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+    line-height:1.6;
+    color:#1f2937;
+    background:#ffffff;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+.container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* Navigation */
+
+header {
+    width:100%;
+    padding:20px 0;
+    border-bottom:1px solid #eee;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo {
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.logo span {
+    color:#2563eb;
+}
+
+.nav-links {
+    display:flex;
+    gap:25px;
+    font-size:15px;
+}
+
+.nav-links a:hover {
+    color:#2563eb;
+}
+
+
+/* Hero */
+
+.hero {
+
+    padding:100px 0;
+
+    background:
+    linear-gradient(
+    135deg,
+    #f8fafc,
+    #eef2ff
+    );
+
+}
+
+.hero-content {
+
+    max-width:800px;
+
+}
+
+.hero h1 {
+
+    font-size:52px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1 span {
+
+    color:#2563eb;
+
+}
+
+
+.hero p {
+
+    font-size:20px;
+
+    color:#4b5563;
+
+    margin-bottom:35px;
+
+}
+
+
+.button {
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+.button:hover {
+
+    opacity:.9;
+
+}
+
+
+/* Section */
+
+section {
+
+    padding:80px 0;
+
+}
+
+
+.section-title {
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-title h2 {
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+}
+
+
+.section-title p {
+
+    color:#6b7280;
+
+}
+
+
+
+/* About */
+
+
+.about {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+.about-box {
+
+    background:#f8fafc;
+
+    padding:35px;
+
+    border-radius:15px;
+
+}
+
+
+.about-box h3 {
+
+    margin-bottom:15px;
+
+}
+
+
+/* Services */
+
+.services-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(
+    auto-fit,
+    minmax(280px,1fr)
+    );
+
+    gap:25px;
+
+}
+
+
+.card {
+
+    padding:30px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+.card h3 {
+
+    margin-bottom:15px;
+
+    color:#111827;
+
+}
+
+
+.card p {
+
+    color:#6b7280;
+
+}
+
+
+/* Why */
+
+
+.advantages {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+
+.advantage {
+
+background:#f8fafc;
+
+padding:25px;
+
+border-radius:12px;
+
+}
+
+
+.advantage strong {
+
+display:block;
+
+font-size:18px;
+
+margin-bottom:10px;
+
+}
+
+/* Industries */
+
+.industries {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(200px,1fr));
+
+gap:20px;
+
+}
+
+
+.industry {
+
+padding:25px;
+
+background:#ffffff;
+
+border:1px solid #e5e7eb;
+
+border-radius:12px;
+
+text-align:center;
+
+}
+
+
+
+/* Workflow */
+
+.workflow {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+
+.step {
+
+padding:30px;
+
+background:#f8fafc;
+
+border-radius:15px;
+
+}
+
+
+.step-number {
+
+font-size:32px;
+
+font-weight:bold;
+
+color:#2563eb;
+
+}
+
+
+
+/* FAQ */
+
+
+.faq-item {
+
+margin-bottom:25px;
+
+}
+
+
+.faq-item h3 {
+
+font-size:18px;
+
+margin-bottom:8px;
+
+}
+
+
+
+/* Contact */
+
+.contact {
+
+text-align:center;
+
+background:#f8fafc;
+
+border-radius:20px;
+
+padding:60px 30px;
+
+}
+
+
+.contact a {
+
+color:#2563eb;
+
+font-weight:bold;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+padding:30px 0;
+
+text-align:center;
+
+color:#6b7280;
+
+border-top:1px solid #eee;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container nav">
+
+<div class="logo">
+
+Xianhe <span>Labs</span>
+
+</div>
+
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#workflow">Workflow</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+
+<section class="hero">
+
+<div class="container hero-content">
+
+
+<h1>
+
+AI-Powered
+
+<span>
+
+Chinese Localization Studio
+
+</span>
+
+</h1>
+
+
+<p>
+
+Helping global businesses connect with Chinese audiences through AI-assisted solutions and native Chinese expertise.
+
+</p>
+
+
+<a class="button" href="#contact">
+
+Work With Us
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="about">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+
+About Xianhe Labs
+
+</h2>
+
+
+<p>
+
+AI solutions combined with native Chinese language and cultural expertise.
+
+</p>
+
+</div>
+
+
+
+<div class="about">
+
+
+<div>
+
+<p>
+
+Xianhe Labs helps international businesses enter and communicate with Chinese-speaking markets.
+
+</p>
+
+
+<p>
+
+We combine artificial intelligence tools with human language understanding to provide accurate, natural and culturally appropriate digital services.
+
+</p>
+
+</div>
+
+
+
+<div class="about-box">
+
+<h3>
+
+Our Mission
+
+</h3>
+
+<p>
+
+To make global communication easier by connecting advanced AI technology with authentic Chinese localization.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="services">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+
+Our Services
+
+</h2>
+
+
+<p>
+
+Professional AI-assisted solutions for global clients.
+
+</p>
+
+</div>
+
+
+
+<div class="services-grid">
+
+
+
+<div class="card">
+
+<h3>
+
+AI Marketing Content
+
+</h3>
+
+<p>
+
+AI-assisted marketing copy, advertisements, landing pages and business content designed for global audiences.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Business Writing
+
+</h3>
+
+<p>
+
+Professional emails, reports, proposals and business documents optimized for clarity and impact.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+SEO Blog & Website Content
+
+</h3>
+
+<p>
+
+Search-friendly articles, website content and digital marketing materials created with AI-assisted workflows.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Resume & Personal Branding
+
+</h3>
+
+<p>
+
+Resume improvement, LinkedIn content and professional branding materials for job seekers and professionals.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Market Research & AI Analysis
+
+</h3>
+
+<p>
+
+Research, information analysis and AI-assisted business insights to support decision making.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Professional Document Formatting
+
+</h3>
+
+<p>
+
+Clean and professional formatting for documents, presentations and business materials.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+
+Native Chinese Voice-over & Audio Transcription
+
+</h3>
+
+<p>
+
+Professional Mandarin Chinese voice recording, narration for educational videos, short videos, podcasts and accurate Chinese audio transcription services.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Multilingual to Native Chinese Localization
+
+</h3>
+
+<p>
+
+English and multilingual translation into natural Chinese with professional proofreading, cultural adaptation and localization for business, technical documents, games and creative content.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Chinese Brand Naming & Cultural Review
+
+</h3>
+
+<p>
+
+Helping international companies create meaningful Chinese brand names and product names with cultural, linguistic and market considerations.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+
+Chinese Social Media Localization
+
+</h3>
+
+<p>
+
+Localized Chinese content solutions for major platforms including Douyin, Xiaohongshu (RED), Weibo, WeChat and other Chinese social media channels.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+
+Why Choose Xianhe Labs
+
+</h2>
+
+
+<p>
+
+Combining artificial intelligence with authentic Chinese language expertise.
+
+</p>
+
+</div>
+
+
+
+<div class="advantages">
+
+
+
+<div class="advantage">
+
+<strong>
+
+Native Chinese Expertise
+
+</strong>
+
+<p>
+
+Authentic language understanding and cultural awareness.
+
+</p>
+
+</div>
+
+
+
+<div class="advantage">
+
+<strong>
+
+AI-Assisted Workflow
+
+</strong>
+
+<p>
+
+Efficient delivery through modern AI tools and human review.
+
+</p>
+
+</div>
+
+
+
+
+<div class="advantage">
+
+<strong>
+
+Cross-cultural Localization
+
+</strong>
+
+<p>
+
+Adapting content for both global and Chinese audiences.
+
+</p>
+
+</div>
+
+
+
+
+<div class="advantage">
+
+<strong>
+
+Global Remote Service
+
+</strong>
+
+<p>
+
+Supporting international clients through online collaboration.
+
+</p>
+
+</div>
+
+
+<div class="advantage">
+
+<strong>
+
+Fast Digital Delivery
+
+</strong>
+
+<p>
+
+Flexible solutions with efficient turnaround times.
+
+</p>
+
+</div>
+
+
+<div class="advantage">
+
+<strong>
+
+PayPal Supported
+
+</strong>
+
+<p>
+
+Convenient international payment solutions for global clients.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+
+Industries We Serve
+
+</h2>
+
+<p>
+
+Supporting businesses across different industries.
+
+</p>
+
+</div>
+
+
+
+<div class="industries">
+
+
+<div class="industry">
+
+E-commerce
+
+</div>
+
+
+<div class="industry">
+
+AI Companies
+
+</div>
+
+
+<div class="industry">
+
+Software & SaaS
+
+</div>
+
+
+<div class="industry">
+
+Gaming
+
+</div>
+
+
+<div class="industry">
+
+Education
+
+</div>
+
+
+<div class="industry">
+
+Marketing Agencies
+
+</div>
+
+
+<div class="industry">
+
+Startups
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="workflow">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+
+Our Workflow
+
+</h2>
+
+
+<p>
+
+A simple and efficient process.
+
+</p>
+
+</div>
+
+
+
+<div class="workflow">
+
+
+<div class="step">
+
+<div class="step-number">
+
+01
+
+</div>
+
+<h3>
+
+Client Request
+
+</h3>
+
+<p>
+
+Understand goals, requirements and project details.
+
+</p>
+
+</div>
+
+
+
+<div class="step">
+
+<div class="step-number">
+
+02
+
+</div>
+
+<h3>
+
+AI Assisted Processing
+
+</h3>
+
+<p>
+
+Use advanced AI tools to create efficient solutions.
+
+</p>
+
+</div>
+
+
+
+<div class="step">
+
+<div class="step-number">
+
+03
+
+</div>
+
+<h3>
+
+Native Review
+
+</h3>
+
+<p>
+
+Chinese language and cultural quality checking.
+
+</p>
+
+</div>
+
+
+
+<div class="step">
+
+<div class="step-number">
+
+04
+
+</div>
+
+<h3>
+
+Final Delivery
+
+</h3>
+
+<p>
+
+Deliver polished results ready for business use.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<section>
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+
+<p>
+
+Common questions from international clients.
+
+</p>
+
+</div>
+
+
+
+<div class="faq-item">
+
+
+<h3>
+
+How do you provide your services?
+
+</h3>
+
+
+<p>
+
+All services are provided remotely through online communication and digital delivery.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+
+Do you work with international clients?
+
+</h3>
+
+
+<p>
+
+Yes. Xianhe Labs supports global businesses and organizations with Chinese localization and AI-assisted digital solutions.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+
+How does payment work?
+
+</h3>
+
+
+<p>
+
+After confirming project details, clients can complete payment through international payment methods including PayPal.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+
+Can AI-generated content be localized into natural Chinese?
+
+</h3>
+
+
+<p>
+
+Yes. We combine AI tools with native Chinese language review to improve accuracy, readability and cultural suitability.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+
+
+<div class="container">
+
+
+<div class="contact">
+
+
+<h2>
+
+Let's Work Together
+
+</h2>
+
+
+<p>
+
+Have a project that needs Chinese localization, AI support or content solutions?
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Email:
+
+<a href="mailto:hua29773@gmail.com">
+
+hua29773@gmail.com
+
+</a>
+
+</p>
+
+
+<br>
+
+
+<a class="button" href="mailto:hua29773@gmail.com">
+
+Contact Xianhe Labs
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<div class="container">
+
+
+<p>
+
+© 2026 Xianhe Labs. AI-Powered Chinese Localization Studio.
+
+</p>
+
+
+</div>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
